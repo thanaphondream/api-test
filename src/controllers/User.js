@@ -65,7 +65,7 @@ exports.Uuser = async (req, res, next) => {
 exports.usershowid = async (req, res, next) => {
     try{
         const { id } = req.params
-        const users = prisma.user.findMany({
+        const users = await prisma.user.findMany({
             where: {
                 id: Number(id)
             }
