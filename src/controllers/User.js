@@ -61,3 +61,18 @@ exports.Uuser = async (req, res, next) => {
       next(err)
     }
   }
+
+exports.usershowid = async (req, res, next) => {
+    try{
+        const { id } = req.params
+        const users = prisma.user.findMany({
+            where: {
+                id: Number(id)
+            }
+        })
+
+        res.json({users})
+    }catch(err){
+        next(err)
+    }
+}
