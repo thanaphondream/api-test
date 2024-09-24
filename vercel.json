@@ -11,12 +11,6 @@
       "src": "/(.*)",
       "dest": "src/index.js"
     }
-  ],
-  "build": {
-    "env": {
-      "DATABASE_URL": "mysql://root:xkEoohDYuiUZhzkqTPNDPJmMDNjmNuxw@junction.proxy.rlwy.net:36132/railway",
-      "JWT_SECRET": "iloveBackend",
-      "PRISMA_CLIENT_ENGINE_TYPE": "binary"
-    }
-  }
+  ]
+
 }
